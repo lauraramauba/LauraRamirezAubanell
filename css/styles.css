@@ -1,0 +1,359 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700|Roboto+Mono:300,400,700");
+@keyframes colorNav {
+  0% {
+    color: #5E565A; }
+  100% {
+    color: #FFA64D; } }
+@keyframes blink {
+  0% {
+    color: #5E565A; }
+  100% {
+    color: #EFECCA; }
+  40% {
+    color: #EFECCA; }
+  100% {
+    color: #5E565A; } }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html, body {
+  width: 100%;
+  overflow-x: hidden; }
+
+.hide {
+  display: block; }
+
+.blink {
+  animation: blink 4s infinite; }
+
+h2 {
+  text-align: center;
+  padding: 30px 0 0 15px;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 1.8rem;
+  color: #5E565A;
+  position: relative;
+  z-index: 2;
+  margin-bottom: 15px;
+  margin-left: 5%;
+  display: inline-block; }
+
+h3 {
+  color: #5E565A; }
+
+.flex-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+
+nav {
+  background-color: #EFECCA; }
+  nav ul {
+    text-align: center;
+    padding: 30px; }
+    nav ul li {
+      display: inline-block;
+      margin: 0 15px;
+      font-family: 'Roboto Mono', monospace;
+      color: #5E565A;
+      font-size: 1.2rem; }
+      nav ul li a {
+        color: #5E565A;
+        text-decoration: none; }
+        nav ul li a:hover span {
+          animation: colorNav 1s forwards; }
+
+.container:before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  display: block;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url(../img/code2.jpg);
+  background-size: cover;
+  -webkit-filter: blur(4px);
+  -moz-filter: blur(4px);
+  -o-filter: blur(4px);
+  -ms-filter: blur(4px);
+  filter: blur(4px);
+  height: 90vh;
+  width: 100%; }
+
+header {
+  height: 90vh; }
+  header .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: 100%; }
+    header .container h1 {
+      font-family: 'Roboto Mono', monospace;
+      color: #EFECCA;
+      z-index: 2;
+      margin: 50px;
+      font-size: 2.5rem;
+      text-align: center; }
+    header .container p {
+      z-index: 2;
+      color: #EFECCA;
+      font-family: 'Lato', sans-serif;
+      width: 50%;
+      text-align: center;
+      line-height: 2rem;
+      font-size: 1.2rem;
+      font-weight: 300; }
+
+#projects {
+  background-color: #FFA64D;
+  padding-bottom: 30px; }
+
+article {
+  width: 25%;
+  background-color: #EFECCA;
+  margin: 15px;
+  border-radius: 5px;
+  padding: 15px; }
+  article h3 {
+    font-family: 'Roboto Mono', monospace;
+    margin-bottom: 15px;
+    margin-left: 5px;
+    font-size: 1.3rem; }
+    article h3 a {
+      color: #5E565A; }
+      article h3 a:hover {
+        color: #FFA64D;
+        text-decoration: none; }
+  article img {
+    border: #000 solid 10px;
+    border-radius: 5px;
+    width: 100%; }
+  article h4 {
+    font-family: 'Lato', sans-serif;
+    color: #5E565A;
+    margin: 10px 5px 5px 5px; }
+  article p {
+    font-family: 'Lato', sans-serif;
+    color: #5E565A;
+    margin: 0 5px 5px 5px;
+    line-height: 1.3rem; }
+
+#knowledge {
+  background-color: #A9CBB7;
+  padding-bottom: 30px; }
+  #knowledge article {
+    width: 15%; }
+    #knowledge article img {
+      border: none;
+      padding: 0 30px; }
+    #knowledge article img[src*="sass"] {
+      padding-top: 20px;
+      padding-bottom: 10px; }
+    #knowledge article:nth-child(-n + 2) img {
+      padding: 0 50px; }
+    #knowledge article h3 {
+      margin-top: 10px;
+      margin-bottom: 0; }
+
+#education {
+  background-color: #FFA64D;
+  padding-bottom: 30px; }
+
+footer {
+  background-color: #5E565A;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px; }
+  footer p {
+    color: #EFECCA;
+    font-family: 'Roboto Mono', monospace;
+    padding: 0 15px;
+    border-right: #EFECCA solid 2px; }
+    footer p a {
+      color: #EFECCA; }
+      footer p a:hover {
+        color: #FFA64D; }
+    footer p i {
+      font-size: 2rem; }
+    footer p:last-child {
+      border: none; }
+
+@media (max-width: 1200px) {
+  .hide {
+    display: block; }
+
+  h2 {
+    font-size: 1.6rem; }
+
+  #knowledge article {
+    width: 17%; }
+    #knowledge article:nth-child(-n + 2) img {
+      padding: 0 42px; }
+    #knowledge article h3 {
+      font-size: 1.2rem; } }
+@media (min-width: 768px) and (max-width: 979px) {
+  .hide {
+    display: block; }
+
+  h2 {
+    font-size: 1.5rem; }
+
+  article {
+    width: 29%; }
+
+  #knowledge article {
+    width: 19%; }
+    #knowledge article:nth-child(-n + 2) img {
+      padding: 0 40px; }
+    #knowledge article h3 {
+      font-size: 1.2rem; }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px; }
+    footer p {
+      padding: 5px 0;
+      border-right: none; }
+      footer p a {
+        color: #EFECCA; }
+        footer p a:hover {
+          color: #FFA64D; }
+      footer p i {
+        font-size: 2rem; } }
+@media (max-width: 767px) {
+  .hide {
+    display: none; }
+
+  h2 {
+    text-align: left;
+    padding: 30px 0 0 0;
+    font-size: 1.3rem;
+    margin-left: 3%;
+    display: inline; }
+
+  nav {
+    height: 73px; }
+    nav .wrapper {
+      width: 40px;
+      height: 40px;
+      position: relative;
+      cursor: pointer;
+      margin: 0 auto; }
+      nav .wrapper span {
+        background: #5E565A;
+        display: block;
+        position: absolute;
+        height: 4px;
+        border-radius: 5px;
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+        -webkit-transition: all 0.25s cubic-bezier(0.22, 0.61, 0.36, 1);
+        -moz-transition: all 0.25s cubic-bezier(0.22, 0.61, 0.36, 1);
+        -o-transition: all 0.25s cubic-bezier(0.22, 0.61, 0.36, 1);
+        transition: all 0.25s cubic-bezier(0.22, 0.61, 0.36, 1);
+        opacity: 1;
+        width: 100%;
+        left: 0; }
+        nav .wrapper span:nth-child(1) {
+          top: 21px; }
+        nav .wrapper span:nth-child(2), nav .wrapper span:nth-child(3) {
+          top: 33px; }
+        nav .wrapper span:nth-child(4) {
+          top: 45px; }
+    nav .wrapper.open span:nth-child(1) {
+      top: 33px;
+      width: 0%;
+      left: 50%; }
+    nav .wrapper.open span:nth-child(2) {
+      -webkit-transform: rotate(45deg);
+      -moz-transform: rotate(45deg);
+      -o-transform: rotate(45deg);
+      transform: rotate(45deg); }
+    nav .wrapper.open span:nth-child(3) {
+      -webkit-transform: rotate(-45deg);
+      -moz-transform: rotate(-45deg);
+      -o-transform: rotate(-45deg);
+      transform: rotate(-45deg); }
+    nav .wrapper.open span:nth-child(4) {
+      top: 33px;
+      width: 0%;
+      left: 50%; }
+    nav ul {
+      background-color: #EFECCA;
+      z-index: 1000;
+      position: absolute;
+      height: fit-content;
+      width: 100%;
+      border-top: #fff solid 2px;
+      border-bottom: #fff solid 2px;
+      top: 70px; }
+      nav ul li {
+        margin-bottom: 10px;
+        font-size: 1.1rem;
+        display: block;
+        position: relative; }
+
+  header .container p {
+    width: 80%;
+    line-height: 1.5rem; }
+
+  section {
+    padding-top: 20px; }
+
+  article {
+    width: 40%; }
+
+  #knowledge article {
+    width: 25%; }
+    #knowledge article img {
+      border: none;
+      padding: 0 25px; }
+    #knowledge article img[src*="sass"] {
+      padding-top: 20px;
+      padding-bottom: 10px; }
+    #knowledge article img[src*="jquery"] {
+      padding-top: 15px;
+      padding-bottom: 0; }
+    #knowledge article:nth-child(-n + 2) img {
+      padding: 0 30px; }
+    #knowledge article h3 {
+      margin-top: 10px;
+      margin-bottom: 0;
+      margin-left: 0;
+      font-size: 1rem; }
+
+  #education h2 {
+    font-size: 1.15rem;
+    margin-left: 2%; }
+  #education h3 {
+    font-size: 1.1rem; }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px; }
+    footer p {
+      padding: 5px 0;
+      border-right: none; }
+      footer p a {
+        color: #EFECCA; }
+        footer p a:hover {
+          color: #FFA64D; }
+      footer p i {
+        font-size: 2rem; } }
+@media (max-width: 480px) {
+  article {
+    width: 100%; }
+
+  #knowledge article {
+    width: 40%; } }
+
+/*# sourceMappingURL=styles.css.map */
