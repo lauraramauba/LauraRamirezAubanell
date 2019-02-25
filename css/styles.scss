@@ -108,7 +108,7 @@ nav {
     z-index: 1;
     display: block;
     background: linear-gradient( rgba(0, 0, 0, 0.6),
-    rgba(0, 0, 0, 0.4)), url(../img/code2.jpg);
+    rgba(0, 0, 0, 0.4)), url(../img/code.jpg);
     background-size: cover;
     -webkit-filter: blur(4px);
     -moz-filter: blur(4px);
@@ -360,7 +360,7 @@ footer {
     }
 
     nav {
-        height: 73px;
+        height: 55px;
        
 
         .wrapper {
@@ -389,21 +389,21 @@ footer {
                 left: 0;
 
                 &:nth-child(1) {
-                    top: 21px;
+                    top: 15px;
                 }
 
                 &:nth-child(2), &:nth-child(3) {
-                    top: 33px;
+                    top: 25px;
                 }
 
                 &:nth-child(4) {
-                    top: 45px;
+                    top: 34px;
                 }
             }
         }
 
         .wrapper.open span:nth-child(1) {
-            top: 33px;
+            top: 25px;
             width: 0%;
             left: 50%;
         }
@@ -423,7 +423,7 @@ footer {
         }
 
         .wrapper.open span:nth-child(4) {
-            top: 33px;
+            top: 25px;
             width: 0%;
             left: 50%;
         }
@@ -436,7 +436,7 @@ footer {
             width: 100%;
             border-top: #fff solid 2px;
             border-bottom: #fff solid 2px;
-            top: 70px;
+            top: 52px;
 
             li {
                 margin-bottom: 10px;
